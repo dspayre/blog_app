@@ -2,7 +2,7 @@ worker_processes 2
 timeout 30
 listen "/tmp/unicorn.blog.sock"
 
-root = "/home/azureuser/apps/blog_app/current"
+root = "/home/bruce/apps/blog_app/current"
 
 working_directory root
 

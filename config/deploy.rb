@@ -2,16 +2,16 @@ require "bundler/capistrano"
 
 
 set :application, "blog_app"
-set :user, "azureuser"
+set :user, "bruce"
 
 
 set :scm, :git
-set :repository, "git@github.com:dspayre/blog_app.git"
+set :repository, "https://github.com/dspayre/blog_app.git"
 set :branch, "master"
 set :use_sudo, true
 
 
-server "rubydemo002.cloudapp.net", :web, :app, :db, primary: true
+server "rubydemo001.cloudapp.net", :web, :app, :db, primary: true
 
 
 set :deploy_to, "/home/#{user}/apps/#{application}"
